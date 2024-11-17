@@ -1,12 +1,13 @@
 1. Instalar AWS CLI para Windows
 - https://awscli.amazonaws.com/AWSCLIV2.msi
 2. Una vez instalado abrir consola o powershell y ejecutar
-- AWS ñ-versiÛn
+- AWS ‚Äì-versi√≥n
 3. Posterior a esto configuramos el aws_access_key_id y aws_secret_access_key que encontramos en AWS Details
+![image](https://github.com/user-attachments/assets/f44e27bb-0fd5-4dde-8505-e335aed54874)
 
 
 Adicional configuramos la zona horaria y el formato json
-4. Ahora creamos una carpeta donde estar· nuestro proyecto y desde powershell nos ubicamos en la carpeta
+4. Ahora creamos una carpeta donde estar√° nuestro proyecto y desde powershell nos ubicamos en la carpeta
 5. Ejecutamos para java:
 cdk init app --language java
 6. Con esto nos bajara toda la estructura del proyecto y estas dos clases:
@@ -19,8 +20,8 @@ y la zona del comando:
 8. Ahora traemos la Plantilla de Bootstrap con CloudFormation:
 
 powershell "cdk bootstrap --show-template | Out-File -encoding utf8 bootstrap-template.yaml"
-9. En el Proyecto abrimos el archivo y en el nodo Resources comentamos desde el FilePublishingRole al CloudFormationExecutionRole esto debido a que esta cuenta por ser estudiante no tiene todo el mÛdulo de IAM.
-10. En el nodo FileAssetsBucketEncryptionKey debemos cambiar el par·metro 
+9. En el Proyecto abrimos el archivo y en el nodo Resources comentamos desde el FilePublishingRole al CloudFormationExecutionRole esto debido a que esta cuenta por ser estudiante no tiene todo el m√≥dulo de IAM.
+10. En el nodo FileAssetsBucketEncryptionKey debemos cambiar el par√°metro 
 
 11. Ejecutamos nuevamente:
 bootstrap-template.yaml"
@@ -28,7 +29,7 @@ bootstrap-template.yaml"
 cdk Bootstrap
 13. Compilamos:
 mvn compile
-14. Creamos la funciÛn lambda que se encuentra en la clase HelloCdkStack de la lÌnea 31 a 42 
+14. Creamos la funci√≥n lambda que se encuentra en la clase HelloCdkStack de la l√≠nea 31 a 42 
 15. Definimos la URL de la lambda
 
 
